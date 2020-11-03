@@ -46,15 +46,15 @@ public class PrimitiveTypes {
 	 */
 	
 	public void test4() {
-		final int NUM = 100; // 상수는 값 다시 지정 불가, 명수명을 대문자로 사용한다.
+		//final int NUM = 100; // 상수는 값 다시 지정 불가, 명수명을 대문자로 사용한다.
 		// NUM = 200;
 		
-		final int AGE_LIMIT = 20; 
+		//final int AGE_LIMIT = 20; 
 		// 상수 변수명은 대문자로 써서 단어 사이 구분을 일반 변수명과 다르게 _로 함.
-		int tomAge = 18;
-		int janeAge = 24;
-		boolean tomAllowed = tomAge > AGE_LIMIT;
-		boolean janeAllowed = janeAge > AGE_LIMIT;
+		//int tomAge = 18;
+		//int janeAge = 24;
+		//boolean tomAllowed = tomAge > AGE_LIMIT;
+		//boolean janeAllowed = janeAge > AGE_LIMIT;
 		
 		// jdk 표현 범위
 		System.out.println("byte: " + Byte.MIN_VALUE + " ~ " + Byte.MAX_VALUE);

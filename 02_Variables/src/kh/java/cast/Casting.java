@@ -11,11 +11,11 @@ package kh.java.cast;
 
 public class Casting {
 	public static void main(String[] args) {
-		Casting c = new Casting();
+		//Casting c = new Casting();
 		//c.test1();
 		//c.test2();
 		//c.test3();
-		c.test4();
+		//c.test4();
 	}
 	
 	public void test4() {
@@ -25,13 +25,13 @@ public class Casting {
 		// '0'이 int로 변환. 48이므로 49이 출력
 		System.out.println(99);//알파벳 c가 출력되려면?
 		// System.out.println(char(99));
-		System.out.println(2.0 == (5 / 2));
+		//System.out.println(2.0 == (5 / 2));
 		// 5/2는 2가 됨. int가 double로 형변환이 일어나고, true
-		System.out.println('C' == 67);
+		//System.out.println('C' == 67);
 		// 'C'는 67이므로 true (C가 int로 변환됨)
-		System.out.println('A' == 'B' - 1);
+		//System.out.println('A' == 'B' - 1);
 		// 'B'-1 연산에 의해 int로 형변환이 일어나서 65가 된다. 'A' == 65이므로 true (A가 int로 변환됨)
-		System.out.println('a' != 97);
+		//System.out.println('a' != 97);
 		// 'a'가 int로 형변환이 되고, 97이므로 false이다.
 	}
 	

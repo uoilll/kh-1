@@ -9,7 +9,7 @@ public class Example {
 		int b = 30;
 		String str;
 		
-		str = (a >= 10 && a <= 30 || b >=20 || b >=25) ? "참" : "거짓";
+		str = ((a >= 10 && a <= 30) || (b >=20 && b >=25)) ? "참" : "거짓";
 		
 		System.out.println(str);
 		

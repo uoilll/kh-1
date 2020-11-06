@@ -10,6 +10,7 @@ public class Test5 {
 	
 	public void test() {
 		Scanner sc = new Scanner(System.in);
+		// 각 변수 선언.
 		String name;
 		int age;
 		String address;
@@ -17,16 +18,21 @@ public class Test5 {
 		int weight;
 		String phoneNum;
 		
+		// 평균을 계산하기 위한 변수 선언
 		int sAge = 0;
 		int sHeight = 0;
 		int sWeight = 0;
 		
 		int i = 1;
+		// 3명을 입력 받기 위한 while문
 		while(i <= 3) {
+			// 입력 받는 과정
 			System.out.print("이름을 입력하세요 : ");
 			name = sc.next();
 			System.out.print("나이를 입력하세요 : ");
 			age = sc.nextInt();
+			// nextInt() 다음에 nextLine()이 나오므로 
+			// nextLine()을 사이에 하나 써줘서 버퍼를 비운다.
 			sc.nextLine();
 			System.out.print("주소를 입력하세요 : ");
 			address = sc.nextLine();
@@ -37,16 +43,19 @@ public class Test5 {
 			System.out.print("핸드폰 번호를 입력하세요 : ");
 			phoneNum = sc.next();
 			
+			// 입력 받은 값을 출력
 			System.out.printf("%d %s %d세  %s %dcm %dkg %s%n", i, name, age, address, height, weight, phoneNum);
 			
-			sAge += age / 3;
-			sHeight += height / 3;
-			sWeight+= weight / 3;
+			// 입력 받은 값들을 값들을 더해줌
+			sAge += age;
+			sHeight += height;
+			sWeight+= weight;
 			i++;
 		}
 		
+		// 나이, 키, 몸무게의 평균 값을 출력
 		System.out.println("==============================");
-		System.out.printf("평균나이 %d세 / 평균 키 : %dCM / 평균 몸무게 : %dkg", sAge, sHeight, sWeight);
+		System.out.printf("평균나이 %d세 / 평균 키 : %dCM / 평균 몸무게 : %dkg", sAge/3, sHeight/3, sWeight/3);
 		
 	}
 }

@@ -24,12 +24,18 @@ public class Test4 {
 			
 		int tot = 0;
 		
-		for(int i = 0; i < length; i++) {
+//		for(int i = 0; i < length; i++) {
+//			if(inputCh==inputStr.charAt(i)) {
+//				tot+=1;
+//			}
+//		}
+		int i = 0;
+		while(i < length) {
 			if(inputCh==inputStr.charAt(i)) {
 				tot+=1;
 			}
+			i++;
 		}
-		
 		System.out.println("\'" + inputCh + "\'" + "가 포함된 갯수 : " + tot + "개");
 	}
 }

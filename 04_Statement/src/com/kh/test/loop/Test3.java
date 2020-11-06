@@ -17,9 +17,13 @@ public class Test3 {
 			System.out.println("잘못입력하셨습니다. 프로그램종료합니다.");
 			return;
 		}
-		for(int i = 1; i < 10; i++) {
+//		for(int i = 1; i < 10; i++) {
+//			System.out.println(input + "X" + i + "=" + (input*i));
+//		}
+		int i = 1;
+		while(i < 10) {
 			System.out.println(input + "X" + i + "=" + (input*i));
+			i++;
 		}
-		
 	}
 }

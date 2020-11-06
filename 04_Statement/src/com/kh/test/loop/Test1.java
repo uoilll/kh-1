@@ -15,10 +15,16 @@ public class Test1 {
 		input = sc.nextInt();
 		int sum = 0;
 		
-		for(int i = 1; i <= input; i++) {
-			if((i%2)==0) {
-				sum += i;
-			}
+//		for(int i = 1; i <= input; i++) {
+//			if((i%2)==0) {
+//				sum += i;
+//			}
+//		}
+		int i = 1;
+		while(i <= input) {
+			if((i%2)==0)
+				sum+=i;
+			i++;
 		}
 		System.out.println("합은 " + sum + "입니다.");
 	}

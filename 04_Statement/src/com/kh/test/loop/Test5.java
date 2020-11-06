@@ -45,7 +45,7 @@ public class Test5 {
 			System.out.print("핸드폰 번호를 입력하세요 : ");
 			phoneNum = sc.next();
 			
-			// 입력 받은 값을 출력
+			// 입력 받은 값을 출력할 문자열 변수에 저장
 			result += i + " " + name + " " + age + "세 " + address + " " + height + "cm " + weight + "kg " + phoneNum + "\n";
 			
 			// 입력 받은 값들을 값들을 더해줌

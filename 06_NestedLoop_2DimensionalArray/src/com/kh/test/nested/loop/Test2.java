@@ -29,7 +29,7 @@ public class Test2 {
 		}
 		
 		for(int i = 0; i < input-1; i++) {
-			for(int j = 0; j < 5; j++) {
+			for(int j = 0; j < input; j++) {
 				if(j <= i) {
 					System.out.print(" ");
 				}else 

@@ -15,16 +15,16 @@ public class Employee {
 	private String address;
 	
 	public void empDelete() {
-		empNo = 0;
-		empName = null;
-		dept = null;
-		job = null;
-		age = 0;
-		gender = ' ';
-		salary = 0;
-		bonusPoint = 0.0;
-		phone = null;
-		address = null;
+		setEmpNo(0);
+		setEmpName(null);
+		setDept(null);
+		setJob(null);
+		setAge(0);
+		setGender(' ');
+		setSalary(0);
+		setBonusPoint(0.0);
+		setPhone(null);
+		setAddress(null);
 	}
 	
 	public void empInput() {

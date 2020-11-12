@@ -5,7 +5,13 @@ import java.util.Scanner;
 import com.oop.emp.model.Employee;
 
 public class EmpTest {
+	
 	public static void main(String[] args) {
+		EmpTest e = new EmpTest();
+		e.mainMenu();
+	}
+	
+	public void mainMenu() {
 		Scanner sc = new Scanner(System.in);
 		int order;
 		Employee e = new Employee();
@@ -51,6 +57,5 @@ public class EmpTest {
 				break;
 			}
 		}
-		
 	}
 }

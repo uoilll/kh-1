@@ -14,19 +14,6 @@ public class Employee {
 	private String phone;
 	private String address;
 	
-	public void empDelete() {
-		setEmpNo(0);
-		setEmpName(null);
-		setDept(null);
-		setJob(null);
-		setAge(0);
-		setGender(' ');
-		setSalary(0);
-		setBonusPoint(0.0);
-		setPhone(null);
-		setAddress(null);
-	}
-	
 	public void empInput() {
 		Scanner sc = new Scanner(System.in);
 		

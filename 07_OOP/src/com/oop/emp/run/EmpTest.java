@@ -29,7 +29,16 @@ public class EmpTest {
 				e.empInput();
 				break;
 			case 2:
-				e.empDelete();
+				e.setEmpNo(0);
+				e.setEmpName(null);
+				e.setDept(null);
+				e.setJob(null);
+				e.setAge(0);
+				e.setGender(' ');
+				e.setSalary(0);
+				e.setBonusPoint(0.0);
+				e.setPhone(null);
+				e.setAddress(null);
 				break;
 			case 3:
 				e.empOutput();

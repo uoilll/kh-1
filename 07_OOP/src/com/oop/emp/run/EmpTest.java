@@ -13,8 +13,8 @@ public class EmpTest {
 	
 	public void mainMenu() {
 		Scanner sc = new Scanner(System.in);
-		int order;
-		Employee e = new Employee();
+		int order = 0;
+		Employee e = null;
 
 		
 		while(true) {
@@ -32,21 +32,16 @@ public class EmpTest {
 			
 			switch(order) {
 			case 1:
+				e = new Employee();
 				e.empInput();
 				break;
 			case 2:
-				e.setEmpNo(0);
-				e.setEmpName(null);
-				e.setDept(null);
-				e.setJob(null);
-				e.setAge(0);
-				e.setGender(' ');
-				e.setSalary(0);
-				e.setBonusPoint(0.0);
-				e.setPhone(null);
-				e.setAddress(null);
-				break;
+				e = null;
 			case 3:
+				if(e==null) {
+					System.out.println("먼저 사원 정보를 입력하세요.\n");
+					break;
+				}
 				e.empOutput();
 				break;
 			case 9:

@@ -16,46 +16,47 @@ public class Employee {
 	
 	public void empInput() {
 		Scanner sc = new Scanner(System.in);
-		
+
 		System.out.print("사원번호 : ");
 		empNo =	sc.nextInt();
-		setEmpNo(empNo);
+		//setEmpNo(empNo);
 		
 		System.out.print("이름 : ");
 		empName =	sc.next();
-		setEmpName(empName);
+		//setEmpName(empName);
 		
 		System.out.print("소속부서 : ");
 		dept =	sc.next();
-		setDept(dept);
+		//setDept(dept);
 		
 		System.out.print("직급 : ");
 		job =	sc.next();
-		setJob(job);
+		//setJob(job);
 		
 		System.out.print("나이 : ");
 		age =	sc.nextInt();
-		setAge(age);
+		//setAge(age);
 		
 		System.out.print("성별 : ");
 		gender = sc.next().charAt(0);
-		setEmpNo(gender);
+		//setEmpNo(gender);
 		
 		System.out.print("급여 : ");
 		salary =	sc.nextInt();
-		setSalary(salary);
+		//setSalary(salary);
 		
 		System.out.print("보너스포인트 : ");
 		bonusPoint = sc.nextDouble();
-		setBonusPoint(bonusPoint);
+		//setBonusPoint(bonusPoint);
 		
 		System.out.print("핸드폰 : ");
 		phone =	sc.next();
-		setPhone(phone);
+		//setPhone(phone);
 		
+		sc.nextLine();
 		System.out.print("주소 : ");
-		address =	sc.next();
-		setAddress(address);
+		address =	sc.nextLine();
+		//setAddress(address);
 		
 		
 	}
@@ -103,6 +104,7 @@ public class Employee {
 	public void setAddress(String address) {
 		this.address = address;
 	}
+	
 	public int getEmpNo() {
 		return empNo;
 	}

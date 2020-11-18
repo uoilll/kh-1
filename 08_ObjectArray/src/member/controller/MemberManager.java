@@ -6,10 +6,11 @@ import member.model.vo.VVip;
 import member.model.vo.Vip;
 
 public class MemberManager {
-	private Gold[] gArr = new Gold[10];
-	private Silver[] sArr = new Silver[10];
-	private Vip[] vArr = new Vip[10];
-	private VVip[] vvArr = new VVip[10];
+	public static final int MAX_PEOPLE = 10;
+	private Gold[] gArr = new Gold[MAX_PEOPLE];
+	private Silver[] sArr = new Silver[MAX_PEOPLE];
+	private Vip[] vArr = new Vip[MAX_PEOPLE];
+	private VVip[] vvArr = new VVip[MAX_PEOPLE];
 	int gIdx = 0;
 	int sIdx = 0;
 	int vIdx = 0;

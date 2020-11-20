@@ -10,10 +10,12 @@ public class TV extends Device{
 		this.channel = channel;
 	}
 	public void channelUp() {
-		System.out.println("채널을 올립니다.");
+		channel++;
+		System.out.println("채널을 올립니다. 현재 채널 : " + channel);
 	}
 	public void channelDown() {
-		System.out.println("채널을 내립니다.");
+		channel--;
+		System.out.println("채널을 내립니다. 현재 채널 : " + channel);
 	}
 	public int getChannel() {
 		return channel;

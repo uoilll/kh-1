@@ -14,7 +14,7 @@ public class PayTable implements Output{
 	@Override
 	public void output() {
 		// TODO Auto-generated method stub
-		System.out.println("\t\t\t**** 급여명세서 ****");
+		System.out.println("\t\t\t\t    **** 급여명세서 ****");
 		System.out.println(str);
 		System.out.println("이름\t기본급\t가족수\t가족수당\t"
 				+ "시간외근무\t시간외수당\t세금\t인센티브(%)"

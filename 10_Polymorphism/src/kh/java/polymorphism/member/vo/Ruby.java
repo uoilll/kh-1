@@ -1,20 +1,20 @@
 package kh.java.polymorphism.member.vo;
 
-public class VVip extends Member{
-	
-	public VVip() {
+public class Ruby extends Member{
+	public Ruby() {
 		super();
 	}
 	
-	public VVip(String name, String grade, int point) {
+	public Ruby(String name, String grade, int point) {
 		super(name, grade, point);
 	}
 	
 	public double getInterestPoint() {
-		return getPoint() * 0.15;
+		return getPoint() * 0.3;
 	}
+	
 	@Override
 	public int buy(int price) {
-		return (int) (price - (price * 0.15));
+		return (int) (price - (price * 0.3));
 	}
 }

@@ -12,4 +12,10 @@ public class Gold extends Member{
 	public double getInterestPoint() {
 		return getPoint() * 0.05;
 	}
+	
+	@Override
+	public int buy(int price) {
+		return (int) (price - (price * 0.05));
+	}
+
 }

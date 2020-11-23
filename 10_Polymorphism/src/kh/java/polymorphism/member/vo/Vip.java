@@ -12,4 +12,9 @@ public class Vip extends Member{
 	public double getInterestPoint() {
 		return getPoint() * 0.1;
 	}
+	
+	@Override
+	public int buy(int price) {
+		return (int) (price - (price * 0.1));
+	}
 }

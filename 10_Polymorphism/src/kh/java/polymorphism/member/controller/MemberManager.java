@@ -1,12 +1,24 @@
 package kh.java.polymorphism.member.controller;
 
-import kh.java.polymorphism.member.vo.Gold;
 import kh.java.polymorphism.member.vo.Member;
-import kh.java.polymorphism.member.vo.Silver;
-import kh.java.polymorphism.member.vo.VVip;
-import kh.java.polymorphism.member.vo.Vip;
 
-public class MemberManager {
+/**
+ * 
+ * 다형성이란?
+ * 부모타입의 참조변수에 자식객체를 담아 제어하는 것
+ * Silver s = new Silver();
+ * Member m = s;
+ * Object o = s;
+ * 
+ * Member[] marr = new Member[10];
+ * 
+ * 1. 변수에 대입, 배열에 대입
+ * 2. 매개변수
+ * 3. 리턴값
+ *
+ */
+
+public class MemberManager{
 	public static final int MAX_PEOPLE = 40;
 //	private Gold[] gArr = new Gold[MAX_PEOPLE];
 //	private Silver[] sArr = new Silver[MAX_PEOPLE];
@@ -75,4 +87,31 @@ public class MemberManager {
 					mArr[i].getPoint(),mArr[i].getInterestPoint());
 		}
 	}
+
+	public void printBuyInfo(int price) {
+		System.out.println("=======================================");
+		for(int i = 0; i < mIdx; i++) {
+			System.out.printf("%s등급회원 %s는 %d원 상품을 %d원에 구매합니다.%n",
+					mArr[i].getGrade(), mArr[i].getName(),
+					//Member가 직접 Buyable을 구현하므로, buy메소드 접근 가능.
+					price, (int)mArr[i].buy(price));
+		}
+	}
+	
+	/**
+	 * public void printBuyInfo(int price){
+	 * 	for(Member m : this.m){
+	 * 		is(m == null)
+	 * 			break;
+	 * 		System.out.printf(
+	 * 			"%s등급회원 %s는 %d원 상품을 %d원에 구매합니다.%n",
+	 * 			m.getGrade(),
+	 * 			m.getName(),
+	 * 			price,
+	 * 			m.buy()
+	 * 		);
+	 * 	}
+	 * }
+	 */
+	
 }

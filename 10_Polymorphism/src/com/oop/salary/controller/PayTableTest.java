@@ -10,7 +10,9 @@ public class PayTableTest {
 	    pt.insertSalaryData(new Salary("소서노",750000,2,3));
 	    pt.insertSalaryData(new Salary("고주몽",800000,1,4));
 	    pt.insertSalaryData(new Salary("모팔모",650000,6,2));
+	    pt.output();
 	    
+	    System.out.println("\n\n");
 	    Calculate.incentive = 0.7f;
 	    pt.output();
 	}

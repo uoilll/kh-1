@@ -22,10 +22,11 @@ public class PayTable implements Output{
 		System.out.println(str);
 		
 		for(int i = 0; i < idx; i++) {
+			salArr[i].calc();
 			salArr[i].output();
 		}
 		System.out.println(str);
-		System.out.println("인원수 : " + idx + "명");
+		System.out.println("인원수 : " + Salary.getCount() + "명");
 		System.out.println(str);
 	}
 }

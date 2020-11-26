@@ -10,6 +10,12 @@ public class CharacterProcess {
 			if(arr[i] == ' ')
 				throw new CharCheckException();
 		}
-		return s.length();
+		int count = 0;
+		for(int i = 0; i < s.length(); i++) {
+			if(arr[i]>='a'&&arr[i]<='z' || arr[i]>='A'&&arr[i]<='Z') {
+				count++;
+			}
+		}
+		return count;
 	}
 }
